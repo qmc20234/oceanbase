@@ -355,6 +355,7 @@
 #include "ob_expr_st_overlaps.h"
 #include "ob_expr_st_union.h"
 #include "ob_expr_st_length.h"
+#include "ob_expr_st_pointn.h"
 #include "ob_expr_st_difference.h"
 #include "ob_expr_st_asgeojson.h"
 #include "ob_expr_st_centroid.h"
@@ -1135,6 +1136,7 @@ static ObExpr::EvalFunc g_expr_eval_functions[] = {
   NULL, //ObExprIs::json_is_false,                                    /* 676 */
   NULL, //ObExprCurrentRole::eval_current_role                        /* 677 */
   NULL, //ObExprMod::mod_decimalint,                                  /* 678 */
+  ObExprSTPointN::eval_st_pointn,                                     /* 679 */
 };
 
 static ObExpr::EvalBatchFunc g_expr_eval_batch_functions[] = {

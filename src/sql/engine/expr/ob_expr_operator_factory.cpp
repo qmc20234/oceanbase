@@ -424,6 +424,7 @@
 #include "sql/engine/expr/ob_expr_st_overlaps.h"
 #include "sql/engine/expr/ob_expr_st_union.h"
 #include "sql/engine/expr/ob_expr_st_length.h"
+#include "sql/engine/expr/ob_expr_st_pointn.h"
 #include "sql/engine/expr/ob_expr_st_difference.h"
 #include "sql/engine/expr/ob_expr_st_asgeojson.h"
 #include "sql/engine/expr/ob_expr_st_centroid.h"
@@ -1045,6 +1046,7 @@ void ObExprOperatorFactory::register_expr_operators()
     REG_OP(ObExprSTOverlaps);
     REG_OP(ObExprSTUnion);
     REG_OP(ObExprSTLength);
+    REG_OP(ObExprSTPointN);
     REG_OP(ObExprSTDifference);
     REG_OP(ObExprSTAsGeoJson);
     REG_OP(ObExprSTCentroid);
