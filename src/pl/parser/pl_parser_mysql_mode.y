@@ -717,6 +717,14 @@ unreserved_keyword:
   | INTERFACE 
   | INVOKER
   | JSON
+  | GEOMETRY
+  | POINT
+  | LINESTRING
+  | POLYGON
+  | MULTIPOINT
+  | MULTILINESTRING
+  | MULTIPOLYGON
+  | geometry_collection
   | LANGUAGE
   | MESSAGE_TEXT
   | MYSQL_ERRNO
